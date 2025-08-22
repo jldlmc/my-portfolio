@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-family: "Crimson Text", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: normal;
+    margin: 20px 0;
+    line-height: 1.2;
+}
 .name-header {
     position: sticky;
     top: 0;
@@ -11,8 +25,8 @@
     font-size: 0.9rem;        
     z-index: 3000;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    padding: 0; /* Ensure no padding */
-    margin: 0;  /* Ensure no margin */
+    padding: 0;
+    margin: 0;
 }
 
 #sidebar {
@@ -82,7 +96,7 @@
 }
 
 #sidebar:not(.collapsed) ~ .toggle-btn {
-  left: 380px; /* sidebar width */
+  left: 380px;
   transform: translateX(-50%);
 }
 
@@ -104,22 +118,17 @@
 .home {
     padding: 100px 20px 50px;
     background-color: #f8f9fa;
-    min-height: 100vh; /* Ensure it takes full height */
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: flex-start; /* Align content to the left */
-    text-align: left; /* Align text to the left */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
 }
 .container {
-    max-width: 1200px; /* Set a maximum width for the container */
-    margin-left: auto; /* Center the container within the home section */
-    margin-right: 20px; /* Adjust the right margin for balance */
-}
-
-.home-title { 
-  font-size: 3rem; 
-  font-weight: bold;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .profile-container {
@@ -135,23 +144,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 320px;
+  width: 340px;
+  height: 280px;
   background-color: #3674B5;
   z-index: 1;
   margin-left: 10px;
   transition: width 0.5s ease, height 0.5s ease;
 }
 .content.expanded .img-rectangle {
-  width: 415px;  /* Expanded width */
-  height: 336px; /* Expanded height */
+  width: 440px;
+  height: 380px;
 }
 .profile-img {
   position: relative;
   z-index: 2;
   max-width: 100%;
   height: auto;
-  margin-right: 20px; /* Add margin to create space */
+  margin-right: 20px;
   padding: 10px;
   border: 8px solid #000;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -172,7 +181,6 @@
   color: #000; 
 }
 
-/* ===== MOBILE NAVBAR (<1100px) ===== */
 .navbar-mobile {
   display: none;
   background-color: #000;
@@ -227,56 +235,63 @@
 .download-container {
     display: flex;
     justify-content: center;
-    /* align-items: center;
-    height: calc(100vh - 50px); */
     margin-top: 30px; 
     margin-bottom: 50px;
 }
 .btn-download {
     display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
     justify-content: center; 
-    background-color: #3D74B6; /* Background color */
-    color: #000; /* Text color */
-    padding: 10px; /* Adjusted padding for a smaller button */
-    border-radius: 6px; /* Slightly smaller border radius */
+    background-color: #3D74B6;
+    color: #000;
+    padding: 10px;
+    border-radius: 6px;
     text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
     transition: transform 0.3s ease;
-    width: 200px; /* Fixed width for consistency */
+    width: 200px;
     border: 3px solid black;
 }
 
 .btn-download:hover {
-    transform: translateY(-3px); /* Move up slightly on hover */
+    transform: translateY(-3px);
 }
 
 .icon-container {
     display: flex;
-    flex-direction: column; /* Arrange icon and text in a column */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 .download-icon {
-    width: 200px; /* Smaller icon size */
-    height: 160px; /* Maintain aspect ratio */
-    transition: transform 0.3s ease; /* Animation transition */
+    width: 200px;
+    height: 160px;
+    transition: transform 0.3s ease;
 }
 
 .btn-download:hover .download-icon {
-    transform: scale(1.1) rotate(10deg); /* Slight rotation on hover */
+    transform: scale(1.1) rotate(10deg);
 }
 
 .btn-download:hover span {
-    transform: scale(1.05); /* Slightly enlarge text on hover */
-    color: #C5B0CD; /* Change text color on hover */
+    transform: scale(1.05);
+    color: #C5B0CD;
+}
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
 }
 
 .tabs {
     display: flex;
-    border-bottom: 2px solid #ccc; /* Bottom border for tabs */
+    justify-content: center;  /* Centers the buttons horizontally */
+    margin-bottom: 20px;  
 }
 
 .tab-button {
@@ -287,78 +302,693 @@
     font-size: 1rem;
     margin-right: 5px;
     transition: background-color 0.3s;
+    align-items: center;
 }
 
 .tab-button.active {
-    background-color: #3D74B6; /* Highlighted tab color */
+    background-color: #3D74B6;
     font-weight: bold;
     border-bottom: 2px solid transparent;
     color: white;
 }
 
 .tab-button:hover {
-    background-color: #e1e1e1; /* Hover effect */
+    background-color: #e1e1e1;
 }
 
 .tab-content {
-    display: none; /* Hide all tab content by default */
+    display: none;
     margin-top: 20px;
     padding: 15px;
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background */
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
 
 .tab-content.active {
-    display: block; /* Show active tab content */
+    display: block;
 }
 
-.job-entry, .education-entry {
-    margin-top: 10px;
+.job-entry {
+    background-color: #C4E1E6;  /* Light background for job entries */
+    border: 1px solid #C4E1E6;      /* Border for definition */
+    border-radius: 8px;          /* Rounded corners */
+    padding: 15px;               /* Padding for space */
+    margin: 15px 0;              /* Margin between entries */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .job-header {
-    display: flex;
-    justify-content: space-between;
-    
-    margin-bottom: 5px;
-}
-
-.company-name {
-    font-weight: bold;
+    font-weight: bold;            /* Bold company name */
+    color: #333;                  /* Darker text color */
 }
 
 .job-date {
-    color: #777; /* Lighter color for date */
+    float: right;                 /* Align date to the right */
+    font-style: italic;           /* Italicize date */
+    color: #666;                  /* Lighter text color */
 }
 
 .job-title {
-    font-size: 1.2rem;
-    margin: 5px 0;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;            /* Space above the job title */
+    color: #007bff;              /* Color for job title */
 }
 
 .job-description {
-    color: #555; /* Dark gray for description */
+    list-style-type: disc;       /* Use bullet points */
+    margin: 10px 0 0 20px;       /* Indent description list */
+    color: #555;                  /* Slightly lighter text color */
+}
+
+.job-description li {
+    margin-bottom: 5px;          /* Space between list items */
+}
+
+.education-entry {
+    background-color: #C4E1E6;  /* Light grey background for a soft look */
+    border: 1px solid #C4E1E6;   /* Slightly darker border for definition */
+    border-radius: 8px;          /* Rounded corners */
+    padding: 20px;               /* Ample padding */
+    margin: 15px 0;              /* Space between entries */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s;  /* Smooth transition for hover effect */
+}
+
+.education-entry:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.degree {
+    font-size: large;
+    font-weight: bold;           /* Larger font for degree */
+    color: #007bff;              /* Dark grey for text */
+    margin-bottom: 5px;          /* Space below the degree */
+}
+
+.university {
+    font-weight: bold;            /* Bold university name */
+    color: #495057;               /* Darker text color */
+}
+
+.honors {
+    font-style: italic;           /* Italicize for emphasis */
+    color: #6c757d;               /* Medium grey */
+    margin-bottom: 8px;          /* Space below honors */
+}
+
+.thesis {
+    color: #6c757d;            /* Slightly smaller font size */
+    margin-top: 5px;             /* Space above thesis */
+}
+
+#skills {
+    padding: 20px;               /* Padding for the whole section */
+}
+
+h2 {
+    text-align: center;          /* Center the main title */
+    color: #007bff;              /* Highlight color for the title */
+    margin-bottom: 20px;         /* Space below the title */
+}
+
+.skills-row {
+    display: flex;               /* Use flexbox for layout */
+    justify-content: space-between; /* Space evenly between categories */
+    margin-bottom: 20px;         /* Space between rows */
+}
+
+.skills-category {
+    flex: 1;                     /* Allow categories to grow equally */
+    margin: 0 10px;              /* Space between categories */
+}
+
+.skills-category h3 {
+    font-size: 1.2em;            /* Font size for category titles */
+    color: #343a40;              /* Dark grey for category titles */
+    margin-bottom: 8px;          /* Space below category titles */
 }
 
 .skills-list {
-    list-style-type: disc; /* Disc bullet points */
-    padding-left: 20px; /* Indentation */
-}
-/* ===== RESPONSIVE ===== */
-@media (max-width: 1099px) {
-  #sidebar, .toggle-btn { display: none; }
-  .content { display: block; margin-left: 0; } 
-  .navbar-mobile { display: flex; }
+    display: flex;               /* Use flexbox for skills */
+    flex-wrap: wrap;            /* Allow wrapping to the next line */
 }
 
+.skill-item {
+    background-color: #f8f9fa;   /* Light background for skill items */
+    border: 1px solid #e0e0e0;   /* Light border for definition */
+    border-radius: 5px;          /* Rounded corners */
+    padding: 10px;               /* Padding for skill items */
+    margin: 5px;                 /* Margin around skill items */
+    flex: 1 1 calc(33.333% - 10px); /* Responsive width for skills */
+    text-align: center;          /* Center text in skill items */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.skill-item:hover {
+    background-color: #e2e6ea;   /* Highlight color on hover */
+}
+
+
+@media (max-width: 1099px) {
+  #sidebar, .toggle-btn { display: none; }
+  .content { display: block; margin-left: 0; margin-bottom: 10px; padding: 5px;} 
+  .navbar-mobile { display: flex; }
+
+
+    .skills-row {
+        flex-direction: column;    /* Stack skills rows vertically */
+    }
+
+    .skills-category {
+        flex: 1 1 100%;           /* Full width for categories */
+        margin: 10px 0;           /* Margin for spacing */
+    }
+
+    .skill-item {
+        flex: 1 1 45%;             /* Two items per row for skills */
+    }
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Crimson Text", serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.name-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 30px;             
+    line-height: 30px;        
+    background-color: #F5F0CD; 
+    color: gray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;        
+    z-index: 3000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    bottom: 0;
+    width: 380px;
+    background-color: #fff;
+    z-index: 1030;
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+
+#sidebar::after { 
+    content: ''; 
+    position: absolute; 
+    top: 90px; 
+    right: 0; 
+    bottom: 0; 
+    width: 5px; 
+    background-color: black; 
+}
+
+#sidebar .logo-container {
+    margin: 100px 0 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar .logo-container img { 
+    max-height: 150px; 
+}
+
+#sidebar .nav-link { 
+    font-size: 1.25rem; 
+    padding: 12px 0; 
+    color: #000; 
+}
+
+#sidebar .nav-link.active {
+    background-color: #3674B5 !important;
+    color: #fff !important;
+    font-size: 1.3rem;
+    padding: 14px 0;
+}
+
+#sidebar.collapsed { 
+    transform: translateX(-100%); 
+}
+
+.toggle-btn {
+    position: fixed;
+    z-index: 2000;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    transition: left 0.5s ease;
+    left: calc(380px - 20px);
+}
+
+#sidebar:not(.collapsed) ~ .toggle-btn {
+    left: 380px;
+    transform: translateX(-50%);
+}
+
+#sidebar.collapsed ~ .toggle-btn {
+    left: 0; 
+    transform: translateX(0);
+}
+
+.toggle-btn i { line-height: 1; }
+
+.content {
+    margin-left: 380px;
+    transition: margin-left 0.5s ease;
+}
+
+.content.expanded {   
+    margin-left: 0; 
+}
+
+.home {
+    padding: 100px 20px 50px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.profile-container {
+    position: relative;
+}
+
+.hometext-container {
+    margin-top: 20px;
+}
+
+.img-rectangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 280px;
+    background-color: #3674B5;
+    z-index: 1;
+    margin-left: 10px;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.content.expanded .img-rectangle {
+    width: 440px;
+    height: 380px;
+}
+
+.profile-img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    padding: 10px;
+    border: 8px solid #000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-custom {
+    background-color: #3674B5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-custom:hover { 
+    background-color: #578FCA; 
+    color: #000; 
+}
+
+.navbar-mobile {
+    display: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1050;
+}
+
+.navbar-mobile .logo-container img { 
+    max-width: 100%; 
+    height: auto; 
+    max-height: 100px; 
+}
+
+.navbar-mobile .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: 1000;
+    transition: max-height 0.7s ease-in-out; 
+}
+
+.navbar-mobile .menu.show { display: flex; }
+
+.navbar-mobile .menu a {
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+    font-size: 18px;
+}
+
+.navbar-mobile .menu a:hover { 
+    background-color: #444; 
+}
+
+.navbar-mobile .toggle-button { 
+    background: none; 
+    border: none; 
+    color: #fff; 
+    font-size: 40px; 
+    cursor: pointer; 
+}
+
+.download-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; 
+    margin-bottom: 50px;
+}
+
+.btn-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: #3D74B6;
+    color: #000;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    width: 200px;
+    border: 3px solid black;
+}
+
+.btn-download:hover {
+    transform: translateY(-3px);
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-icon {
+    width: 200px;
+    height: 160px;
+    transition: transform 0.3s ease;
+}
+
+.btn-download:hover .download-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.btn-download:hover span {
+    transform: scale(1.05);
+    color: #C5B0CD;
+}
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;  /* Centers the buttons horizontally */
+    margin-bottom: 20px;  
+}
+
+.tab-button {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+    align-items: center;
+}
+
+.tab-button.active {
+    background-color: #3D74B6;
+    font-weight: bold;
+    color: white;
+}
+
+.tab-button:hover {
+    background-color: #e1e1e1;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.job-entry {
+    background-color: #C4E1E6;  /* Light background for job entries */
+    border: 1px solid #C4E1E6;      /* Border for definition */
+    border-radius: 8px;          /* Rounded corners */
+    padding: 15px;               /* Padding for space */
+    margin: 15px 0;              /* Margin between entries */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.job-header {
+    font-weight: bold;            /* Bold company name */
+    color: #333;                  /* Darker text color */
+}
+
+.job-date {
+    float: right;                 /* Align date to the right */
+    font-style: italic;           /* Italicize date */
+    color: #666;                  /* Lighter text color */
+}
+
+.job-title {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;            /* Space above the job title */
+    color: #007bff;              /* Color for job title */
+}
+
+.job-description {
+    list-style-type: disc;       /* Use bullet points */
+    margin: 10px 0 0 20px;       /* Indent description list */
+    color: #555;                  /* Slightly lighter text color */
+}
+
+.job-description li {
+    margin-bottom: 5px;          /* Space between list items */
+}
+
+.education-entry {
+    background-color: #C4E1E6;  /* Light grey background for a soft look */
+    border: 1px solid #C4E1E6;   /* Slightly darker border for definition */
+    border-radius: 8px;          /* Rounded corners */
+    padding: 20px;               /* Ample padding */
+    margin: 15px 0;              /* Space between entries */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s;  /* Smooth transition for hover effect */
+}
+
+.education-entry:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.degree {
+    font-size: large;
+    font-weight: bold;           /* Larger font for degree */
+    color: #007bff;              /* Dark grey for text */
+    margin-bottom: 5px;          /* Space below the degree */
+}
+
+.university {
+    font-weight: bold;            /* Bold university name */
+    color: #495057;               /* Darker text color */
+}
+
+.honors {
+    font-style: italic;           /* Italicize for emphasis */
+    color: #6c757d;               /* Medium grey */
+    margin-bottom: 8px;          /* Space below honors */
+}
+
+.thesis {
+    color: #6c757d;            /* Slightly smaller font size */
+    margin-top: 5px;             /* Space above thesis */
+}
+
+#skills {
+    padding: 20px;               /* Padding for the whole section */
+}
+
+h2 {
+    text-align: center;          /* Center the main title */
+    color: #007bff;              /* Highlight color for the title */
+    margin-bottom: 20px;         /* Space below the title */
+}
+
+.skills-row {
+    display: flex;               /* Use flexbox for layout */
+    justify-content: space-between; /* Space evenly between categories */
+    margin-bottom: 20px;         /* Space between rows */
+}
+
+.skills-category {
+    flex: 1;                     /* Allow categories to grow equally */
+    margin: 0 10px;              /* Space between categories */
+}
+
+.skills-category h3 {
+    font-size: 1.2em;            /* Font size for category titles */
+    color: #343a40;              /* Dark grey for category titles */
+    margin-bottom: 8px;          /* Space below category titles */
+}
+
+.skills-list {
+    display: flex;               /* Use flexbox for skills */
+    flex-wrap: wrap;            /* Allow wrapping to the next line */
+}
+
+.skill-item {
+    background-color: #f8f9fa;   /* Light background for skill items */
+    border: 1px solid #e0e0e0;   /* Light border for definition */
+    border-radius: 5px;          /* Rounded corners */
+    padding: 10px;               /* Padding for skill items */
+    margin: 5px;                 /* Margin around skill items */
+    flex: 1 1 calc(33.333% - 10px); /* Responsive width for skills */
+    text-align: center;          /* Center text in skill items */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.skill-item:hover {
+    background-color: #e2e6ea;   /* Highlight color on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1099px) {
+    #sidebar, .toggle-btn { display: none; }
+    .content { display: block; margin-left: 0; padding: 5px; } 
+    .navbar-mobile { display: flex; }
+
+    .skills-row {
+        flex-direction: column;    /* Stack skills rows vertically */
+    }
+    .name-header {
+      width: 100%;
+    }
+
+    .skills-category {
+        flex: 1 1 100%;           /* Full width for categories */
+        margin: 10px 0;           /* Margin for spacing */
+    }
+
+    .skill-item {
+        flex: 1 1 45%;             /* Two items per row for skills */
+    }
+}
+
+@media (max-width: 768px) {
+    .job-entry, .education-entry {
+        padding: 10px;            /* Reduce padding for smaller screens */
+    }
+
+    .job-title, .degree {
+        font-size: 1.2rem;        /* Adjust font size */
+    }
+
+    .tabs {
+        flex-direction: column;    /* Stack tabs vertically */
+    }
+
+    .tab-button {
+        margin-bottom: 10px;      /* Space between buttons */
+        width: 100%;              /* Full width for buttons */
+    }
+
+    .navbar-mobile {
+        padding: 10px;            /* Reduce padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-item {
+        flex: 1 1 100%;            /* Stack skill items on very small screens */
+    }
+
+    .h1 {
+        font-size: 2rem;           /* Smaller header size */
+    }
+    .name-header {
+      width: 100%;
+    }
+}
 @media (min-width: 1100px) {
   .navbar-mobile { display: none; }
   #sidebar, .toggle-btn, .content { display: block; }
+  .skill-item {
+        flex: 1 1 100%;            /* Stack skill items on very small screens */
+    }
 }
 
-.underline {
-    border-bottom: 5px solid black; /* Adjust thickness and color as needed */
-    display: inline-block; /* Ensures the border only spans the width of the text */
-    padding-bottom: 2px; /* Optional: Adds space between the text and the line */
-}
