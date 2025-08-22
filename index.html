@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+  <div class="name-header">
+    <p>JESSA LYN B. DALMACIO</p>
+  </div>
+
+<div id="sidebar">
+  <div class="logo-container">
+    <img src="assets/img/logo.png" alt="Logo" class="img-fluid">
+  </div>
+  <ul class="nav flex-column mt-4 text-center">
+    <li class="nav-item"><a class="nav-link active fw-bold mb-2" href="#home">HOME</a></li>
+    <li class="nav-item"><a class="nav-link fw-bold mb-2" href="#about">ABOUT</a></li>
+    <li class="nav-item"><a class="nav-link fw-bold mb-2" href="#projects">PROJECTS</a></li>
+    <li class="nav-item"><a class="nav-link fw-bold mb-2" href="#contact">CONTACT</a></li>
+  </ul>
+</div>
+<button id="toggleBtn" class="toggle-btn"><i id="toggleIcon" class="bi bi-arrow-left"></i></button>
+
+<div class="navbar-mobile">
+  <div class="logo-container">
+    <img src="assets/img/logo2.jpg" alt="Logo">
+  </div>
+  <button class="toggle-button" onclick="toggleMenu()">☰</button>
+  <div class="menu" id="menu">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</div>
+
+<div id="content" class="content">
+  <section id="home" class="home">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0 position-relative profile-container">
+                <div class="img-rectangle" style="margin-left: 1.5rem;"></div>
+                <img src="assets/img/me5.jpg" alt="Jessa Lyn" class="img-fluid profile-img" style="margin-left: 1rem;">
+            </div>
+            <div class="col-md-8 text-md-start text-center ps-md-5 hometext-container">
+                <h1 class="home-title" style="margin: 3rem;"><span class="underline">WEBSITE</span> DEVELOPER</h1>
+                <p class="mt-3" style="margin: 3rem; font-size: 1.3rem; text-align: justify;">Fresh IT graduate specialized in Web and Mobile Applications.
+                    Hands-on experience in web development and UI/UX design, aspiring to become a professional web developer. 
+                    Skilled in ASP.NET MVC, HTML, CSS, JavaScript, Bootstrap, and familiar with Java and PHP.</p>
+                <a href="#about" class="btn-custom mt-5" style="margin: 3rem;">know more about me</a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="text-center about-container">
+                <h1 class="about-title mt-5"><span class="underline">ABOUT ME</span></h1>
+            </div>
+            <div class="abouttext-container">
+                <audio id="aboutAudio" src="assets/mp3/sample.mp3"></audio>
+                <p 
+                    style="font-size: 1.3rem; margin: 3rem; text-align: justify;" 
+                    onMouseOver="document.getElementById('aboutAudio').play()" 
+                    onMouseOut="document.getElementById('aboutAudio').pause()"
+                >
+                    Hi there! I’m a fresh graduate and a highly competitive web developer, driven by passion, determination, and a strong desire to learn. 
+                    My journey began with zero knowledge in this field, but my eagerness to improve sets me apart. I strive to give my all to every task, 
+                    believing that hard work is the key to success. I enjoy taking challenges and quickly adapting to new tools and technologies. 
+                    During my OJT, I turned my uncertainty into confidence, mastering technologies I once knew nothing about. 
+                    I’m not just eager to learn—I’m excited to contribute to meaningful projects that make a difference.
+                </p>
+                <div class="personal-info" style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 2rem;">
+                    <div class="info-box" style="border: 4px solid #3D74B6; background: #FBF5DE; padding: 10px; margin: 5px; text-align: center; font-size: 18px;">
+                        Name: <strong>Jessa Lyn Dalmacio</strong>
+                    </div>
+                    <div class="info-box" style="border: 4px solid #3D74B6; background: #FBF5DE; padding: 10px; margin: 5px; text-align: center; font-size: 18px;">
+                        Birthday: <strong>December 03, 2002</strong>
+                    </div>
+                    <div class="info-box" style="border: 4px solid #3D74B6; background: #FBF5DE; padding: 10px; margin: 5px; text-align: center; font-size: 18px;">
+                        Age: <strong>22 Years Old</strong>
+                    </div>
+                    <div class="info-box" style="border: 4px solid #3D74B6; background: #FBF5DE; padding: 10px; margin: 5px; text-align: center; font-size: 18px;">
+                        Address: <strong>Capas, Tarlac</strong>
+                    </div>
+                    <div class="info-box" style="border: 4px solid #3D74B6; background: #FBF5DE; padding: 10px; margin: 5px; text-align: center; font-size: 18px;">
+                        Phone: <strong>(+63) 907 222 9483</strong>
+                    </div>
+                    <div class="info-box" style="border: 4px solid #3D74B6; background: #FBF5DE; padding: 10px; margin: 5px; text-align: center; font-size: 18px;">
+                        Email: <strong>jessalyndalmacio1@gmail.com</strong>
+                    </div>
+                </div>
+
+                <div class="download-container">
+                  <a href="My Resume.pdf" download class="btn-download">
+                      <div class="icon-container">
+                          <img src="assets/img/meow.png" alt="Download CV" class="download-icon">
+                      </div>
+                      <span>DOWNLOAD RESUME</span>
+                  </a>
+                </div>
+
+                <div class="tabs">
+                    <button class="tab-button active" onclick="openTab(event, 'experience')">EXPERIENCE</button>
+                    <button class="tab-button" onclick="openTab(event, 'education')">EDUCATION</button>
+                    <button class="tab-button" onclick="openTab(event, 'skills')">SKILLS</button>
+                </div>
+
+                <div id="experience" class="tab-content active">
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <span class="company-name">FRENIFY LLC</span>
+                            <span class="job-date">(2018 - Today)</span>
+                        </div>
+                        <h3 class="job-title">Sr. Front-end Engineer</h3>
+                        <p class="job-description">
+                            Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="education" class="tab-content">
+                    <h3 class="degree">Bachelor of Science in Computer Science</h3>
+                    <span class="university">University of Example (2014 - 2018)</span>
+                </div>
+
+                <div id="skills" class="tab-content">
+                    <ul class="skills-list">
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+              </div>
+        </div>
+    </div>
+  </section>
+  
+
+  <section id="projects" class="container py-5">
+    <h3 class="text-center mb-4">My Projects</h3>
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm h-100">
+          <img src="assets/img/p1.png" class="card-img-top" alt="Project 1" data-bs-toggle="modal" data-bs-target="#project1Modal" style="cursor:pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Visitor Management System</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm h-100">
+          <img src="assets/img/project2-cover.jpg" class="card-img-top" alt="Project 2" data-bs-toggle="modal" data-bs-target="#project2Modal" style="cursor:pointer;">
+          <div class="card-body">
+            <h5 class="card-title">E-Commerce Website</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card shadow-sm h-100">
+          <img src="assets/img/project3-cover.jpg" class="card-img-top" alt="Project 3" data-bs-toggle="modal" data-bs-target="#project3Modal" style="cursor:pointer;">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Website</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <!-- Project 1 Modal -->
+  <div class="modal fade" id="project1Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="carouselProject1" class="carousel slide mb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active"><img src="assets/img/p2.png" class="d-block w-100" alt="Project 1 Screenshot 1"></div>
+              <div class="carousel-item"><img src="assets/img/p3.png" class="d-block w-100" alt="Project 1 Screenshot 2"></div>
+              <div class="carousel-item"><img src="assets/img/p6.png" class="d-block w-100" alt="Project 1 Screenshot 3"></div>
+              <div class="carousel-item"><img src="assets/img/p4.png" class="d-block w-100" alt="Project 1 Screenshot 4"></div>
+              <div class="carousel-item"><img src="assets/img/p5.png" class="d-block w-100" alt="Project 1 Screenshot 5"></div>
+              <div class="carousel-item"><img src="assets/img/p7.png" class="d-block w-100" alt="Project 1 Screenshot 6"></div>
+              <div class="carousel-item"><img src="assets/img/p8.png" class="d-block w-100" alt="Project 1 Screenshot 7"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <h4 class="mb-2">Event Management System</h4>
+          <p>A web-based application to manage events, attendees, and venues with Google Forms and QR code ticketing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2 Modal -->
+  <div class="modal fade" id="project2Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="carouselProject2" class="carousel slide mb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active"><img src="assets/img/project2-1.jpg" class="d-block w-100" alt="Project 2 Screenshot 1"></div>
+              <div class="carousel-item"><img src="assets/img/project2-2.jpg" class="d-block w-100" alt="Project 2 Screenshot 2"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+          </div>
+          <h4 class="mb-2">E-Commerce Website</h4>
+          <p>A fully functional e-commerce platform with product management and online payment integration.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3 Modal -->
+  <div class="modal fade" id="project3Modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div id="carouselProject3" class="carousel slide mb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active"><img src="assets/img/project3-1.jpg" class="d-block w-100" alt="Project 3 Screenshot 1"></div>
+              <div class="carousel-item"><img src="assets/img/project3-2.jpg" class="d-block w-100" alt="Project 3 Screenshot 2"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+          </div>
+          <h4 class="mb-2">Portfolio Website</h4>
+          <p>A personal portfolio website showcasing projects, skills, and contact details.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init();
+
+// Sidebar toggle (desktop)
+const sidebar = document.getElementById('sidebar');
+const content = document.getElementById('content');
+const toggleBtn = document.getElementById('toggleBtn');
+const toggleIcon = document.getElementById('toggleIcon');
+toggleBtn.addEventListener('click', () => {
+  if (window.innerWidth < 1100) return;
+  sidebar.classList.toggle('collapsed');
+  content.classList.toggle('expanded'); // This adds/removes the 'expanded' class
+  toggleIcon.classList.toggle('bi-arrow-left');
+  toggleIcon.classList.toggle('bi-arrow-right');
+});
+
+// Mobile menu toggle
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  const content = document.getElementById('content');
+
+  if (menu.style.display === 'flex') {
+    menu.style.display = 'none';
+    menu.style.marginTop = '0px'; // reset margin
+    content.style.marginTop = '0px';
+  } else {
+    menu.style.display = 'flex';
+    menu.style.marginTop = '20px'; // add margin-top to menu
+    const menuHeight = menu.offsetHeight;
+    content.style.marginTop = (menuHeight + 20) + 'px'; // push content below menu
+  }
+}
+
+function openTab(event, tabName) {
+    // Hide all tab contents
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // Remove active class from all tab buttons
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Show the selected tab content
+    document.getElementById(tabName).classList.add('active');
+
+    // Set the clicked tab button to active
+    event.currentTarget.classList.add('active');
+}
+</script>
+
+</body>
+</html>
