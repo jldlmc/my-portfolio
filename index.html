@@ -8,6 +8,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </head>
 <body class="bg-light">
   <div class="name-header">
@@ -21,7 +23,7 @@
   <ul class="nav flex-column mt-4 text-center">
     <li class="nav-item"><a class="nav-link active fw-bold mb-2" href="#home">HOME</a></li>
     <li class="nav-item"><a class="nav-link fw-bold mb-2" href="#about">ABOUT</a></li>
-    <li class="nav-item"><a class="nav-link fw-bold mb-2" href="#projects">PROJECTS</a></li>
+    <li class="nav-item"><a class="nav-link fw-bold mb-2" href="#projects">PORTFOLIO</a></li>
     <li class="nav-item"><a class="nav-link fw-bold mb-2" href="#contact">CONTACT</a></li>
   </ul>
 </div>
@@ -35,7 +37,7 @@
   <div class="menu" id="menu">
     <a href="#home">HOME</a>
     <a href="#about">ABOUT</a>
-    <a href="#projects">PROJECTS</a>
+    <a href="#projects">PORTFOLIO</a>
     <a href="#contact">CONTACT</a>
   </div>
 </div>
@@ -49,7 +51,7 @@
                 <img src="assets/img/me5.jpg" alt="Jessa Lyn" class="img-fluid profile-img" style="margin-left: 1rem;">
             </div>
             <div class="col-md-8 text-md-start text-center ps-md-5 hometext-container">
-                <h1 class="home-title" style="margin: 3rem;"><span class="underline">WEBSITE</span> DEVELOPER</h1>
+                <h1 class="home-title" style="margin: 3rem;">WEBSITE DEVELOPER</h1>
                 <p class="mt-3" style="margin: 3rem; font-size: 1.3rem; text-align: justify;">Fresh IT graduate specialized in Web and Mobile Applications.
                     Hands-on experience in web development and UI/UX design, aspiring to become a professional web developer. 
                     Skilled in ASP.NET MVC, HTML, CSS, JavaScript, Bootstrap, and familiar with Java and PHP.</p>
@@ -63,7 +65,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="text-center about-container">
-                <h1 class="about-title mt-5"><span class="underline">ABOUT ME</span></h1>
+                <h1 class="about-title mt-5">ABOUT ME</h1>
             </div>
             <div class="abouttext-container">
                 <audio id="aboutAudio" src="assets/mp3/sample.mp3"></audio>
@@ -100,7 +102,7 @@
                 </div>
 
                 <div class="download-container">
-                  <a href="My Resume.pdf" download class="btn-download">
+                  <a href="Resume of Jessa Lyn Dalmacio.pdf" download class="btn-download">
                       <div class="icon-container">
                           <img src="assets/img/meow.png" alt="Download CV" class="download-icon">
                       </div>
@@ -114,32 +116,106 @@
                     <button class="tab-button" onclick="openTab(event, 'skills')">SKILLS</button>
                 </div>
 
-                <div id="experience" class="tab-content active">
-                    <div class="job-entry">
-                        <div class="job-header">
-                            <span class="company-name">FRENIFY LLC</span>
-                            <span class="job-date">(2018 - Today)</span>
-                        </div>
-                        <h3 class="job-title">Sr. Front-end Engineer</h3>
-                        <p class="job-description">
-                            Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </div>
-                </div>
+                  <div id="experience" class="tab-content active">
+                      <div class="job-entry box">
+                          <div class="job-header">
+                              <span class="company-name">Tarlac State University - Office of Management Information Systems (OMIS)</span>
+                              <span class="job-date">(Feb 2025 - June 2025)</span>
+                          </div>
+                          <p class="job-title">On-the-Job Training - Software Development Unit</p>
+                          <ul class="job-description">
+                              <li>Completed 486 hours of required OJT by developing an assigned web-based Visitor Management System.</li>
+                              <li>Collaborated with fellow OJTs in full-stack development using HTML, CSS, JavaScript, C#, and the ASP.NET MVC framework.</li>
+                              <li>Participated in UI/UX design tasks, including wireframing and prototyping with Figma.</li>
+                              <li>Tested, debugged, and deployed system features to ensure functionality and reliability.</li>
+                          </ul>
+                      </div>
+                      
+                      <div class="job-entry box">
+                          <div class="job-header">
+                              <span class="company-name">Mcdonald’s, Luisita, Tarlac City, Tarlac</span>
+                              <span class="job-date">(Dec 2022 - Feb 2023)</span>
+                          </div>
+                          <p class="job-title">Service Crew</p>
+                          <ul class="job-description">
+                              <li>Completed training and was assigned to various stations, ensuring quality and efficiency in service.</li>
+                              <li>Assisted customers and maintained a clean, organized environment to uphold store standards.</li>
+                              <li>Strengthened teamwork, adaptability, and time management skills in a fast-paced work setting.</li>
+                          </ul>
+                      </div>
+                  </div>
 
-                <div id="education" class="tab-content">
-                    <h3 class="degree">Bachelor of Science in Computer Science</h3>
-                    <span class="university">University of Example (2014 - 2018)</span>
-                </div>
+                  <div id="education" class="tab-content">
+                      <div class="education-entry box">
+                          <p class="degree">Bachelor of Science in Information Technology</p>
+                          <span class="university">Tarlac State University (2021 - 2025)</span> <br>
+                          <span class="honors">Cum Laude</span> <br>
+                          <span class="thesis">Thesis: "Web Portal for Scholarship Management System with a Decision Tree Algorithm for Eligibility Assessment.”</span>
+                      </div>
+                      
+                      <div class="education-entry box">
+                          <p class="degree">Science Technology Engineering Mathematics (STEM)</p>
+                          <span class="university">Cristo Rey High School (2019 - 2021)</span> <br>
+                          <span class="honors">With High Honors</span>
+                      </div>
+                  </div>
 
-                <div id="skills" class="tab-content">
-                    <ul class="skills-list">
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                    </ul>
-                </div>
+                  <div id="skills" class="tab-content">
+                      <div class="skills-row">
+                          <div class="skills-category">
+                              <h3>Programming Languages</h3>
+                              <div class="skills-list">
+                                  <div class="skill-item">PHP</div>
+                                  <div class="skill-item">C#</div>
+                                  <div class="skill-item">Java</div>
+                                  <div class="skill-item">Python</div>
+                              </div>
+                          </div>
+                          <div class="skills-category">
+                              <h3>Web Technologies</h3>
+                              <div class="skills-list">
+                                  <div class="skill-item">HTML</div>
+                                  <div class="skill-item">CSS</div>
+                                  <div class="skill-item">JavaScript</div>
+                              </div>
+                          </div>
+                          <div class="skills-category">
+                              <h3>Frameworks & Libraries</h3>
+                              <div class="skills-list">
+                                  <div class="skill-item">ASP.NET MVC</div>
+                                  <div class="skill-item">Bootstrap</div>
+                                  <div class="skill-item">Ionic</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="skills-row">
+                          <div class="skills-category">
+                              <h3>Databases</h3>
+                              <div class="skills-list">
+                                  <div class="skill-item">SQL Server</div>
+                                  <div class="skill-item">MySQL</div>
+                              </div>
+                          </div>
+                          <div class="skills-category">
+                              <h3>UI/UX & Design Tools</h3>
+                              <div class="skills-list">
+                                  <div class="skill-item">Figma</div>
+                                  <div class="skill-item">Canva</div>
+                              </div>
+                          </div>
+                          <div class="skills-category">
+                              <h3>Other Tools</h3>
+                              <div class="skills-list">
+                                  <div class="skill-item">Microsoft Office</div>
+                                  <div class="skill-item">Adobe Animate</div>
+                                  <div class="skill-item">CapCut</div>
+                                  <div class="skill-item">PicsArt</div>
+                                  <div class="skill-item">Adobe Lightroom</div>
+                                  <div class="skill-item">Microsoft Paint</div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
         </div>
     </div>
@@ -147,29 +223,29 @@
   
 
   <section id="projects" class="container py-5">
-    <h3 class="text-center mb-4">My Projects</h3>
+    <h1 class="text-center mb-4">PORTFOLIO</h1>
     <div class="row g-4">
       <div class="col-md-4 col-sm-6">
         <div class="card shadow-sm h-100">
           <img src="assets/img/p1.png" class="card-img-top" alt="Project 1" data-bs-toggle="modal" data-bs-target="#project1Modal" style="cursor:pointer;">
           <div class="card-body">
-            <h5 class="card-title">Visitor Management System</h5>
+            <h6 class="card-title fw-bold" style="text-align: center;">Visitor & Event Management System</h6>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="card shadow-sm h-100">
-          <img src="assets/img/project2-cover.jpg" class="card-img-top" alt="Project 2" data-bs-toggle="modal" data-bs-target="#project2Modal" style="cursor:pointer;">
+          <img src="assets/img/s1.jpg" class="card-img-top" alt="Project 2" data-bs-toggle="modal" data-bs-target="#project2Modal" style="cursor:pointer;">
           <div class="card-body">
-            <h5 class="card-title">E-Commerce Website</h5>
+            <h6 class="card-title fw-bold" style="text-align: center;">Web Portal for Scholarship Management System with a Decision Tree Algorithm for Eligibility Assessment</h6>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6">
         <div class="card shadow-sm h-100">
-          <img src="assets/img/project3-cover.jpg" class="card-img-top" alt="Project 3" data-bs-toggle="modal" data-bs-target="#project3Modal" style="cursor:pointer;">
-          <div class="card-body">
-            <h5 class="card-title">Portfolio Website</h5>
+          <img src="assets/img/d1.jpg" class="card-img-top" alt="Project 3" data-bs-toggle="modal" data-bs-target="#project3Modal" style="cursor:pointer;">
+          <div class="card-body fw-bold">
+            <h6 class="card-title fw-bold" style="text-align: center;">Donation Management System: Web-Based to APK</h6>
           </div>
         </div>
       </div>
@@ -252,6 +328,9 @@
 <!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
 AOS.init();
 
