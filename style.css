@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
 }
+
+
 h1 {
     font-family: "Crimson Text", serif;
     font-size: 3rem;
@@ -768,7 +770,7 @@ h1 {
 
 .tabs {
     display: flex;
-    justify-content: center;  /* Centers the buttons horizontally */
+    justify-content: center;
     margin-bottom: 20px;  
 }
 
@@ -806,179 +808,188 @@ h1 {
 }
 
 .job-entry {
-    background-color: #C4E1E6;  /* Light background for job entries */
-    border: 1px solid #C4E1E6;      /* Border for definition */
-    border-radius: 8px;          /* Rounded corners */
-    padding: 15px;               /* Padding for space */
-    margin: 15px 0;              /* Margin between entries */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #C4E1E6;  
+    border: 1px solid #C4E1E6;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .job-header {
-    font-weight: bold;            /* Bold company name */
-    color: #333;                  /* Darker text color */
+    font-weight: bold;
+    color: #333;
 }
 
 .job-date {
-    float: right;                 /* Align date to the right */
-    font-style: italic;           /* Italicize date */
-    color: #666;                  /* Lighter text color */
+    float: right; 
+    font-style: italic;         
+    color: #666;                  
 }
 
 .job-title {
     font-size: large;
     font-weight: bold;
-    margin-top: 10px;            /* Space above the job title */
-    color: #007bff;              /* Color for job title */
+    margin-top: 10px;            
+    color: #007bff;              
 }
 
 .job-description {
-    list-style-type: disc;       /* Use bullet points */
-    margin: 10px 0 0 20px;       /* Indent description list */
-    color: #555;                  /* Slightly lighter text color */
+    list-style-type: disc;       
+    margin: 10px 0 0 20px;       
+    color: #555;               
 }
 
 .job-description li {
-    margin-bottom: 5px;          /* Space between list items */
+    margin-bottom: 5px;        
 }
 
 .education-entry {
-    background-color: #C4E1E6;  /* Light grey background for a soft look */
-    border: 1px solid #C4E1E6;   /* Slightly darker border for definition */
-    border-radius: 8px;          /* Rounded corners */
-    padding: 20px;               /* Ample padding */
-    margin: 15px 0;              /* Space between entries */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.2s;  /* Smooth transition for hover effect */
+    background-color: #C4E1E6;  
+    border: 1px solid #C4E1E6;  
+    border-radius: 8px;        
+    padding: 20px;          
+    margin: 15px 0;             
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s;
 }
 
 .education-entry:hover {
-    transform: translateY(-3px); /* Lift effect on hover */
+    transform: translateY(-3px);
 }
 
 .degree {
     font-size: large;
-    font-weight: bold;           /* Larger font for degree */
-    color: #007bff;              /* Dark grey for text */
-    margin-bottom: 5px;          /* Space below the degree */
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
 }
 
 .university {
-    font-weight: bold;            /* Bold university name */
-    color: #495057;               /* Darker text color */
+    font-weight: bold;            
+    color: #495057;               
 }
 
 .honors {
-    font-style: italic;           /* Italicize for emphasis */
-    color: #6c757d;               /* Medium grey */
-    margin-bottom: 8px;          /* Space below honors */
+    font-style: italic;           
+    color: #6c757d;              
+    margin-bottom: 8px;        
 }
 
 .thesis {
-    color: #6c757d;            /* Slightly smaller font size */
-    margin-top: 5px;             /* Space above thesis */
+    color: #6c757d;            
+    margin-top: 5px;           
 }
 
 #skills {
-    padding: 20px;               /* Padding for the whole section */
+    padding: 20px;               
 }
 
 h2 {
-    text-align: center;          /* Center the main title */
-    color: #007bff;              /* Highlight color for the title */
-    margin-bottom: 20px;         /* Space below the title */
+    text-align: center;       
+    color: #007bff;             
+    margin-bottom: 20px;         
 }
 
 .skills-row {
-    display: flex;               /* Use flexbox for layout */
-    justify-content: space-between; /* Space evenly between categories */
-    margin-bottom: 20px;         /* Space between rows */
+    display: flex;             
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .skills-category {
-    flex: 1;                     /* Allow categories to grow equally */
-    margin: 0 10px;              /* Space between categories */
+    flex: 1;                   
+    margin: 0 10px;           
 }
 
 .skills-category h3 {
-    font-size: 1.2em;            /* Font size for category titles */
-    color: #343a40;              /* Dark grey for category titles */
-    margin-bottom: 8px;          /* Space below category titles */
+    font-size: 1.2em;           
+    color: #343a40;              
+    margin-bottom: 8px;       
 }
 
 .skills-list {
-    display: flex;               /* Use flexbox for skills */
-    flex-wrap: wrap;            /* Allow wrapping to the next line */
+    display: flex;             
+    flex-wrap: wrap;            
 }
 
 .skill-item {
-    background-color: #f8f9fa;   /* Light background for skill items */
-    border: 1px solid #e0e0e0;   /* Light border for definition */
-    border-radius: 5px;          /* Rounded corners */
-    padding: 10px;               /* Padding for skill items */
-    margin: 5px;                 /* Margin around skill items */
-    flex: 1 1 calc(33.333% - 10px); /* Responsive width for skills */
-    text-align: center;          /* Center text in skill items */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    background-color: #f8f9fa;   
+    border: 1px solid #e0e0e0;   
+    border-radius: 5px;         
+    padding: 10px;               
+    margin: 5px;                 
+    flex: 1 1 calc(33.333% - 10px); 
+    text-align: center;        
+    transition: background-color 0.3s; 
 }
 
 .skill-item:hover {
-    background-color: #e2e6ea;   /* Highlight color on hover */
+    background-color: #e2e6ea;   
 }
 
-/* Media Queries for Responsiveness */
+
+.carousel-control-prev, 
+.carousel-control-next { 
+    width: 5%; 
+} 
+.carousel-control-prev-icon, 
+.carousel-control-next-icon { 
+    filter: invert(100%); 
+}
+
 @media (max-width: 1099px) {
     #sidebar, .toggle-btn { display: none; }
     .content { display: block; margin-left: 0; padding: 5px; } 
     .navbar-mobile { display: flex; }
 
     .skills-row {
-        flex-direction: column;    /* Stack skills rows vertically */
+        flex-direction: column;   
     }
     .name-header {
       width: 100%;
     }
 
     .skills-category {
-        flex: 1 1 100%;           /* Full width for categories */
-        margin: 10px 0;           /* Margin for spacing */
+        flex: 1 1 100%;           
+        margin: 10px 0;           
     }
 
     .skill-item {
-        flex: 1 1 45%;             /* Two items per row for skills */
+        flex: 1 1 45%;             
     }
 }
 
 @media (max-width: 768px) {
     .job-entry, .education-entry {
-        padding: 10px;            /* Reduce padding for smaller screens */
+        padding: 10px;            
     }
 
     .job-title, .degree {
-        font-size: 1.2rem;        /* Adjust font size */
+        font-size: 1.2rem;        
     }
 
     .tabs {
-        flex-direction: column;    /* Stack tabs vertically */
+        flex-direction: column;    
     }
 
     .tab-button {
-        margin-bottom: 10px;      /* Space between buttons */
-        width: 100%;              /* Full width for buttons */
+        margin-bottom: 10px;      
+        width: 100%;              
     }
 
     .navbar-mobile {
-        padding: 10px;            /* Reduce padding */
+        padding: 10px;            
     }
 }
 
 @media (max-width: 480px) {
     .skill-item {
-        flex: 1 1 100%;            /* Stack skill items on very small screens */
+        flex: 1 1 100%;            
     }
 
     .h1 {
-        font-size: 2rem;           /* Smaller header size */
+        font-size: 2rem;           
     }
     .name-header {
       width: 100%;
@@ -988,7 +999,7 @@ h2 {
   .navbar-mobile { display: none; }
   #sidebar, .toggle-btn, .content { display: block; }
   .skill-item {
-        flex: 1 1 100%;            /* Stack skill items on very small screens */
+        flex: 1 1 100%;            
     }
 }
 
